@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /pasundan/
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^adminweb/?$ /pasundan/wp-login.php [QSA,L]
+RewriteRule ^adminweb/register/?$ /pasundan/wp-login.php?action=register [QSA,L]
+RewriteRule ^adminweb/lostpassword/?$ /pasundan/wp-login.php?action=lostpassword [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /pasundan/index.php [L]
+</IfModule>

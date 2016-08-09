@@ -1,9 +1,31 @@
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' />
+<?php echo required_js_css() ?>
 
 <script type="text/javascript">
-	jQuery(document).ready( function(){
-		console.log("me here")
-	})
+	(function($){
+
+		$(".table-data").DataTable();
+
+	})(jQuery);
 </script>
+
+
+
+<div class="col-md-12">
+
+	<h3>Daftar page menu</h3>
+
+	<table class="table table-bordered table-data">
+		<thead>
+			<tr>
+				<th width="10px">No</th>
+				<th>Judul</th>
+				<th width="50px">Aksi</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+	<button class="btn btn-primary"> <span class="fa fa-plus"></span> Tambah page menu</button>
+
+</div>
