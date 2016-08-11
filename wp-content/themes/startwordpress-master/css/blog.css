@@ -178,13 +178,14 @@ h6, .h6 {
 header{
   background: #ff6600;
   border:none;
-}
-header .row{
-  width: 100%;
+  margin:0;
+  padding: 0;
 }
 header .search-pane{
   color: #fff;
   padding:5px 0 5px 0;
+  margin:0;
+  height: 45px;
 }
 header .search-pane input[type=submit]{
   color:#000;
@@ -197,19 +198,37 @@ header .slider-pane{
 header .slider-pane ul{
   list-style: none;
   margin:0;
-  padding: 0
+  padding: 0;
 }
 header .slider-pane ul li {
   display: block;
   float: left;
   text-align: center;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
 }
 header .slider-pane ul li img{
-  display: block;
-  width: 100% !important;
-  height: 300px !important;
+  width: 100%;
 }
-header .slider-pane ul li .label{
-  margin: 10px 0 10px 0;
-  color:red;
+header .slider-pane ul li .sliderlabel{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+  background: #0cab4e;
+  font-size: 17pt;
+  color:#fff;
+  padding: 10px 0 10px 0;
+}
+header .menus{
+  position: absolute;
+  padding: 0;
+  margin:0;
+  opacity: 0.8;
+  height: 90px;
+  background: #00f;
+  top:45px;
+  left:0;
+  right:0;
 }

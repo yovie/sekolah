@@ -19,18 +19,19 @@
 
 	<header>
 		<div class="row search-pane">
-			<div class="col-md-12 text-right">
-				<?php get_search_form() ?>
+			<div class="col-md-2 pull-right">
+				<input type="text" name="search" placeholder="Pencarian" class="form-control"  />
 			</div>
 		</div>
 		<div class="row slider-pane">
 			<ul>
 				<li>
 					<img src="<?php echo get_template_directory_uri() ?>/img/1.jpg" />
-					<div class="label">Pengkuh Agamana, Luhung Elmuna, Jembar Budayana, Parigel Kabisana</div>
+					<div class="sliderlabel">Pengkuh Agamana, Luhung Elmuna, Jembar Budayana, Parigel Kabisana</div>
 				</li>
 			</ul>
 		</div>
+		<div class="row menus">ada</div>
 	</header>
 
 	<div class="container">
