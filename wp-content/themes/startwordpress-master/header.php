@@ -31,7 +31,39 @@
 				</li>
 			</ul>
 		</div>
-		<div class="row menus">ada</div>
+		<div class="row menus">
+			<div class="container">
+				<img src="logo.png" class="col-md-2 logo" />
+				<div class="col-md-2 judul">
+					<span>SMA</span>
+					<span>PASUNDAN 3</span>
+					<span>BANDUNG</span>
+				</div>
+				<ul class="col-md-8 mmenu">
+					<li>
+						Kontak
+					</li>
+					<li>
+						Galeri
+					</li>
+					<li>
+						Berita
+					</li>
+					<li>
+						Kehidupan Siswa
+					</li>
+					<li>
+						Akademik
+					</li>
+					<li>
+						Penerimaan
+					</li>
+					<li>
+						Profil
+					</li>
+				</ul>
+			</div>
+		</div>
 	</header>
 
 	<div class="container">

@@ -227,8 +227,40 @@ header .menus{
   margin:0;
   opacity: 0.8;
   height: 90px;
-  background: #00f;
+  background: #1a476e;
   top:45px;
   left:0;
   right:0;
+}
+header .menus .logo{
+  height: 130px;
+  margin-top: -40px;
+}
+header .menus .judul{
+  text-align: center;
+  color: #fff;
+  padding:10px 0 10px 0;
+}
+header .menus .judul span{
+  display: block;
+  font-weight: bold;
+}
+header .menus .judul span:nth-of-type(2){
+  font-size: 18pt;
+}
+header .menus .mmenu{
+}
+header .menus .mmenu li{
+  display: block;
+  float: right;
+  color:#fff;
+  padding: 0 10px 0 10px;
+  cursor:pointer;
+  height: 90px;
+  line-height: 90px;
+  font-size: 12pt;
+}
+header .menus .mmenu li:hover{
+  background: #fff;
+  color:#1a476e;
 }
