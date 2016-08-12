@@ -1,10 +1,76 @@
     </div> <!-- /.container -->
 
-	<footer class="blog-footer">
-      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
+	<footer>
+    	<div class="satu">
+    		<div class="container">
+    			<div class="col-md-2">
+    				<ul>
+    					<li> <a href=""> Profil </a> </li>
+    					<li> <a href=""> Penerimaan </a> </li>
+    					<li> <a href=""> Akademik </a> </li>
+    					<li> <a href=""> Alumni </a> </li>
+    					<li> <a href=""> Sedekah </a> </li>
+    				</ul>
+    			</div>
+    			<div class="col-md-2">
+    				<ul>
+    					<li> <a href=""> Kehidupan Siswa </a> </li>
+    					<li> <a href=""> Berita </a> </li>
+    					<li> <a href=""> Karir </a> </li>
+    					<li> <a href=""> Forum Orang Tua </a> </li>
+    				</ul>
+    			</div>
+    			<div class="col-md-4 hijau">
+    				<center>
+	    				<img src="logo.png" />
+	    				<span class="miring">"terakreditasi A"</span>
+    				</center>
+    			</div>
+    			<div class="col-md-4">
+    				<span class="top">SISTEM INFORMASI AKADEMIK</span>
+    				<form class="form-horizontal" role="form">
+    					<div class="form-group">
+    						<div class="col-md-12">
+    							<input type="text" name="username" placeholder="Username" class="form-control" />
+    						</div>
+    					</div>
+    					<div class="form-group">
+    						<div class="col-md-12">
+    							<input type="password" name="password" placeholder="Password" class="form-control" />
+    						</div>
+    					</div>
+    					<div class="form-group">
+    						<div class="col-md-12">
+    							<button class="btn btn-primary">Login</button>
+    						</div>
+    					</div>
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="dua">
+    		<div class="container">
+    			<div class="col-md-4">
+    				<span class="tebal">SMA PASUNDAN 3 BANDUNG</span>
+    				<span> <div class="dicon1"></div> Jalan Kebon Jati No.31 Kecamatan Andir Kota Bandung Kode Pos 40181</span>
+    				<span> <div class="dicon2"></div> (022) 423 8679</span>
+    				<span> <div class="dicon3"></div> info@smapasundan3bandung.sch.id</span>
+    			</div>
+    			<div class="col-md-4 hijau khusus">
+    				<center>
+	    				<span>SEKOLAH MENENGAH ATAS</span>
+	    				<span>PASUNDAN 3</span>
+	    				<span>BANDUNG</span>
+    				</center>
+    			</div>
+    			<div class="col-md-4">
+    				<span>&copy; 2016 SMA Pasundan 3 Bandung</span>
+    				<span>All Rights Reserved</span>
+    				<span>Maintained by Salam IT Solution</span>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="tiga"></div>
     </footer>
 
 <?php wp_footer(); ?> 
