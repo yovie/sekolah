@@ -225,7 +225,7 @@ header .menus{
   position: absolute;
   padding: 0;
   margin:0;
-  opacity: 0.8;
+  opacity: 0.9;
   height: 90px;
   background: #1a476e;
   top:45px;
@@ -249,6 +249,7 @@ header .menus .judul span:nth-of-type(2){
   font-size: 18pt;
 }
 header .menus .mmenu{
+  position: relative;
 }
 header .menus .mmenu li{
   display: block;
@@ -263,4 +264,61 @@ header .menus .mmenu li{
 header .menus .mmenu li:hover{
   background: #fff;
   color:#1a476e;
+}
+header .menus .mmenu li:hover > .submenu{
+  display: block;
+}
+header .menus .mmenu li .submenu{
+  background: #fff;
+  position: absolute;
+  height: 150px;
+  background: #fff;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px;
+  left:53px;
+  right: 0;
+  line-height: 10px;
+  font-size: 9pt;
+  border-radius: 0 0 10px 10px;
+  display: none;
+}
+header .menus .mmenu li .submenu .kiri{
+  width:30%;
+  float:left;
+}
+header .menus .mmenu li .submenu .kiri a{
+  display: block;
+  font-size: 9pt;
+  font-weight: bold;
+  color:orange;
+  line-height: 15px;
+}
+header .menus .mmenu li .submenu .kiri p{
+  color:#777;
+}
+header .menus .mmenu li .submenu .tengah{
+  width:40%;
+  float:left;
+  text-align: center;
+}
+header .menus .mmenu li .submenu .tengah img{
+  height: 100px;
+  display: block;
+}
+header .menus .mmenu li .submenu .tengah a{
+  display: inline-block;
+  padding: 12px 0 0 0;
+  color: #1a476e;
+  transform: scaleY(1.5);
+}
+header .menus .mmenu li .submenu .kanan{
+  width:30%;
+  float:left;
+}
+header .menus .mmenu li .submenu .kanan a{
+  display: block;
+  line-height: 17px;
+  color: #1a476e;
+  font-size: 10pt;
 }

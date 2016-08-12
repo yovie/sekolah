@@ -51,15 +51,104 @@
 					</li>
 					<li>
 						Kehidupan Siswa
+						<div class="submenu">
+							<div class="kiri">
+								<a href="">Organisasi Siswa Intra Sekolah</a>
+								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
+								<a href="">Buku Pedoman Siswa &amp; Orang Tua</a>
+								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
+							</div>
+							<div class="tengah">
+								<center>
+									<img src="<?php echo get_template_directory_uri() ?>/img/image4.jpeg" />
+									<a href="">Kehidupan Siswa di Sekolah</a>
+								</center>
+							</div>
+							<div class="kanan">
+								<a href="">Kalender Akademik</a>
+								<a href="">Kegiatan Rutin Harian</a>
+								<a href="">Seragam</a>
+								<a href="">Ekstrakurikuler</a>
+								<a href="">Kepemimpinan</a>
+								<a href="">Kesehatan dan Keamanan</a>
+							</div>
+						</div>
 					</li>
 					<li>
 						Akademik
+						<div class="submenu">
+							<div class="kiri">
+								<a href="">Pembelajaran Abad 21</a>
+								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
+								<a href="">Sistem Penilaian Terintegrasi</a>
+								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
+							</div>
+							<div class="tengah">
+								<center>
+									<img src="<?php echo get_template_directory_uri() ?>/img/image3.jpeg" />
+									<a href="">Sistem Akademik</a>
+								</center>
+							</div>
+							<div class="kanan">
+								<a href="">Kurikulum</a>
+								<a href="">Sistem Pembelajaran</a>
+								<a href="">Sistem Penilaian</a>
+								<a href="">Peminatan</a>
+								<a href="">Perpustakaan</a>
+								<a href="">Teknologi Pembelajaran</a>
+							</div>
+						</div>
 					</li>
 					<li>
 						Penerimaan
+						<div class="submenu">
+							<div class="kiri">
+								<a href="">Mengapa SMA Pasundan 3 Bandung ?</a>
+								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
+								<a href="">Buku Pedoman Pendaftaran</a>
+								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
+							</div>
+							<div class="tengah">
+								<center>
+									<img src="<?php echo get_template_directory_uri() ?>/img/image2.jpeg" />
+									<a href="">Penerimaan Siswa Baru</a>
+								</center>
+							</div>
+							<div class="kanan">
+								<a href="">Pendaftaran 2016</a>
+								<a href="">Prosedur Pendaftaran</a>
+								<a href="">Upload Persyaratan</a>
+								<a href="" style="font-style:italic">Campur Tour</a>
+								<a href="">Bantuan Keuangan</a>
+								<a href="">Pertanyaan Sering Ditanyakan</a>
+							</div>
+						</div>
 					</li>
 					<li>
 						Profil
+						<div class="submenu">
+							<div class="kiri">
+								<a href="">Jelajahi Profil Buku Sekolah</a>
+								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
+								<a href="">Potret dari Lulusan</a>
+								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
+							</div>
+							<div class="tengah">
+								<center>
+									<img src="<?php echo get_template_directory_uri() ?>/img/image1.jpeg" />
+									<a href="">Profil SMA Pasundan 3 Bandung</a>
+								</center>
+							</div>
+							<div class="kanan">
+								<a href="">Sambutan</a>
+								<a href="">Sejarah</a>
+								<a href="">Visi, Misi, dan Filosopi</a>
+								<a href="">Guru dan Tenaga Kependidikan</a>
+								<a href="">Rencana Strategis</a>
+								<a href="">Fasilitas</a>
+								<a href="">Petunjuk Ke Sekolah</a>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
