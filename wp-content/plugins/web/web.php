@@ -101,18 +101,67 @@ function create_menus() {
         )
     );
 
-    register_post_type( 'seting',
-        array(
-            'labels' => create_label('Seting'),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'seting'),
-            'menu_icon' => 'dashicons-admin-generic',
-            'supports' => array( 'title', 'editor'),
-        )
-    );
+    // register_post_type( 'seting',
+    //     array(
+    //         'labels' => create_label('Sosial media'),
+    //         'public' => true,
+    //         'has_archive' => true,
+    //         'rewrite' => array('slug' => 'seting'),
+    //         'menu_icon' => 'dashicons-admin-users',
+    //         'supports' => array( 'title', 'editor'),
+    //     )
+    // );
 }
 
+function sosial_media_add_menu() {
+  add_menu_page( 'Sosial media', 'Sosial media', 'manage_options', 'custom-settings', 'sosial_media_page', 'dashicons-admin-users', 50);
+}
+
+add_action( 'admin_menu', 'sosial_media_add_menu' );
+
+function sosial_media_page() { ?>
+    <div class="wrap">
+        <h1>Sosial media</h1>
+        <form method="post" action="options.php">
+            <?php
+           settings_fields('section');
+           do_settings_sections('theme-options');      
+           submit_button(); 
+       ?>
+        </form>
+    </div>
+<?php }
+
+function setting_twitter() { ?>
+        <input type="text" name="twitter" id="twitter" value="<?php echo get_option('twitter'); ?>" />
+        <?php }
+
+function setting_facebook() { ?>
+            <input type="text" name="facebook" id="facebook" value="<?php echo get_option('facebook'); ?>" />
+            <?php }
+
+function setting_instagram() { ?>
+            <input type="text" name="instagram" id="instagram" value="<?php echo get_option('instagram'); ?>" />
+            <?php }
+
+function setting_youtube() { ?>
+            <input type="text" name="youtube" id="youtube" value="<?php echo get_option('youtube'); ?>" />
+            <?php }
+
+function sosial_media_page_setup() {
+    add_settings_section('section', '', null, 'theme-options');
+    add_settings_field('twitter', 'Twitter URL', 'setting_twitter', 'theme-options', 'section');
+    add_settings_field('facebook', 'Facebook URL', 'setting_facebook', 'theme-options', 'section');
+    add_settings_field('instagram', 'Instagram URL', 'setting_instagram', 'theme-options', 'section');
+    add_settings_field('youtube', 'Youtube URL', 'setting_youtube', 'theme-options', 'section');
+  
+    register_setting('section', 'twitter');
+    register_setting('section', 'facebook');
+    register_setting('section', 'instagram');
+    register_setting('section', 'youtube');
+}
+
+add_action( 'admin_init', 'sosial_media_page_setup' );   
 
 add_action( 'init', 'create_menus' );
 
