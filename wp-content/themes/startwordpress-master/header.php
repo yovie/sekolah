@@ -22,6 +22,12 @@
 			<div class="col-md-2 pull-right">
 				<input type="text" name="search" placeholder="Pencarian" class="form-control"  />
 			</div>
+			<div class="col-md-2 pull-right ikon">
+				<a href=""> <span class="dicon-fb"></span></a>
+				<a href=""> <span class="dicon-tw"></span></a>
+				<a href=""> <span class="dicon-yu"></span></a>
+				<a href=""> <span class="dicon-in"></span></a>
+			</div>
 		</div>
 		<div class="row slider-pane">
 			<ul>

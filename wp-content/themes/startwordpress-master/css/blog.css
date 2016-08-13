@@ -187,6 +187,19 @@ header .search-pane{
   margin:0;
   height: 45px;
 }
+header .search-pane .ikon{
+  font-size:15pt;
+}
+header .search-pane .ikon a{
+  float:left;
+  color: #fff;
+  padding: 0 7px 0 7px;
+  cursor: pointer;
+}
+header .search-pane .ikon a:hover{
+  color: #0cab4e;
+  text-decoration: none;  
+}
 header .search-pane input[type=submit]{
   color:#000;
 }
@@ -398,14 +411,14 @@ footer .dicon1:before{
   content: "\f230";
   float:left;
   margin-right: 10px;
-  height: 40px;
+  height: 30px;
 }
 footer .dicon2:before{
   font-family: "dashicons";
   content: "\f525";
   float:left;
   margin-right: 10px;
-  height: 20px;
+  height: 15px;
 }
 footer .dicon3:before{
   font-family: "dashicons";
@@ -414,20 +427,49 @@ footer .dicon3:before{
   margin-right: 10px;
   height: 20px;
 }
+.dicon4:before{
+  font-family: "dashicons";
+  content: "\f522";
+  float:left;
+  margin-right: 10px;
+  height: 20px;
+}
+
+.dicon-fb:before{
+  font-family: "dashicons";
+  content: "\f305";
+}
+.dicon-tw:before{
+  font-family: "dashicons";
+  content: "\f301";
+}
+.dicon-yu:before{
+  font-family: "dashicons";
+  content: "\f236";
+}
+.dicon-in:before{
+  font-family: "dashicons";
+  content: "\f306";
+}
 
 .container .bariskahiji{
-  padding-top:10px;
-  padding-bottom:10px;
+  padding-top:40px;
+  padding-bottom:40px;
 }
 .container .bariskahiji img{
   width:300px;
+}
+.container .bariskahiji h4{
+  font-size:18pt;
 }
 .container .bariskahiji span{
   display: block;
   padding: 5px;
 }
-.container .nextright{
+.container .nextright a{
   float: right;
+  padding-bottom: 10px;
+  color: orange;
 }
 
 .container .bariskadua{
@@ -445,6 +487,7 @@ footer .dicon3:before{
 }
 .container .bariskadua h4{
   color: #fff;
+  font-size:18pt;
 }
 .container .bariskadua ul li{
   display: block;
@@ -471,21 +514,102 @@ footer .dicon3:before{
 .container .bariskatilu{
   padding: 0;
 }
+.container .bariskatilu h4{
+  font-size:18pt;
+}
 .container .bariskatilu .backbiru{
   background: #1a476e;
+  color: #fff;
+}
+.container .bariskatilu .backbiru h4{
+  padding-top: 30px;
+  color: #fff;
+}
+.container .bariskatilu .backbiru a{
+  color: #fff;
+}
+.container .bariskatilu .backbiru .nextright a{
+  color: orange;
+  margin-bottom: 10px;
+} 
+.container .bariskatilu .backbiru a:hover{
+  text-decoration: underline;
+}
+.container .bariskatilu .jarak{
+  padding-top: 30px;
 }
 .container .bariskatilu .kagiatan{
   list-style: none;
   margin: 0;padding: 0;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 .container .bariskatilu .kagiatan li{
   display: block;
+  margin-bottom: 30px;
+}
+.container .bariskatilu .kagiatan li .waktos{
+  display: block;
+  width: 70px;
+  height: 80px;
+  margin: 0 10px 10px 0;
+  background: #1a476e;
+  padding: 10px;
+  color:#fff;
+  text-align: center;
+  font-size: 17pt;
+  font-weight: bold;
+  float:left;
+}
+.container .bariskatilu .kagiatan li .nami{
+  display: block;
+  float:left;
+  font-size:13pt;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container .bariskatilu .kagiatan li .kagiatan{
+  
 }
 .container .bariskatilu .headline{
   display: block;
 }
 .container .bariskatilu .headline img{
-  width: 250px;
+  width: 220px;
   float:left;
+  margin:0 10px 10px 0;
+}
+.container .bariskatilu .headline .judulna{
+  font-weight: bold;
+  display: block;
+  font-size: 11pt;
+}
+.container .bariskatilu .headline .beritana{
+  padding: 10px;
+  display: block;
+}
+.container .bariskatilu .utama{
+  list-style: none;
+  padding:0 0 0 10px; margin: 0;
+}
+.container .bariskatilu .utama li{
+  display: block;
+}
+.container .bariskatilu .utama li a{
+  font-size:11pt;
+  font-weight: bold;
+}
+.container .bariskatilu .potopoto{
+  padding:0 0 0px 0;margin: 0 0 10px 0;
+  list-style: none;
+  overflow: hidden;
+  height: 110px;
+}
+.container .bariskatilu .potopoto li{
+  display: block;
+  float: left;
+  margin: 10px 20px 10px 0;
+}
+.container .bariskatilu .potopoto li img{
+  width: 120px;
 }
