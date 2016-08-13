@@ -316,6 +316,9 @@ header .menus .mmenu li .submenu .kiri a{
   color:orange;
   line-height: 15px;
 }
+header .menus .mmenu li .submenu .kiri a:hover{
+  text-decoration: underline;
+}
 header .menus .mmenu li .submenu .kiri p{
   color:#777;
 }
@@ -334,6 +337,9 @@ header .menus .mmenu li .submenu .tengah a{
   color: #1a476e;
   transform: scaleY(1.5);
 }
+header .menus .mmenu li .submenu .tengah a:hover{
+  text-decoration: underline;
+}
 header .menus .mmenu li .submenu .kanan{
   width:30%;
   float:left;
@@ -343,6 +349,9 @@ header .menus .mmenu li .submenu .kanan a{
   line-height: 17px;
   color: #1a476e;
   font-size: 10pt;
+}
+header .menus .mmenu li .submenu .kanan a:hover{
+  text-decoration: underline;
 }
 
 footer{

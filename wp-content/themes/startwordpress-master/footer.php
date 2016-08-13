@@ -28,15 +28,15 @@
     			</div>
     			<div class="col-md-4">
     				<span class="top">SISTEM INFORMASI AKADEMIK</span>
-    				<form class="form-horizontal" role="form">
+    				<form class="form-horizontal" role="form" action="<?php echo get_site_url(); ?>/adminweb" method="post">
     					<div class="form-group">
     						<div class="col-md-12">
-    							<input type="text" name="username" placeholder="Username" class="form-control" />
+    							<input type="text" name="log" placeholder="Username" class="form-control" />
     						</div>
     					</div>
     					<div class="form-group">
     						<div class="col-md-12">
-    							<input type="password" name="password" placeholder="Password" class="form-control" />
+    							<input type="password" name="pwd" placeholder="Password" class="form-control" />
     						</div>
     					</div>
     					<div class="form-group">
