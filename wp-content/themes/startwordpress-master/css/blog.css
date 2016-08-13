@@ -414,3 +414,78 @@ footer .dicon3:before{
   margin-right: 10px;
   height: 20px;
 }
+
+.container .bariskahiji{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.container .bariskahiji img{
+  width:300px;
+}
+.container .bariskahiji span{
+  display: block;
+  padding: 5px;
+}
+.container .nextright{
+  float: right;
+}
+
+.container .bariskadua{
+  background: #1a476e;
+  color:#fff;
+  min-height: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  padding: 20px;
+}
+.container .bariskadua ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+.container .bariskadua h4{
+  color: #fff;
+}
+.container .bariskadua ul li{
+  display: block;
+  float:left;
+  margin-bottom: 20px;
+}
+.container .bariskadua ul li img{
+  width:180px;
+  float:left;
+}
+.container .bariskadua ul li .papatah{
+  text-align: center;
+  display: block;
+  /*line-height: 30px;*/
+  padding-top: 10px;
+}
+.container .bariskadua ul li .nunulis{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: block; 
+}
+
+.container .bariskatilu{
+  padding: 0;
+}
+.container .bariskatilu .backbiru{
+  background: #1a476e;
+}
+.container .bariskatilu .kagiatan{
+  list-style: none;
+  margin: 0;padding: 0;
+  margin-top: 20px;
+}
+.container .bariskatilu .kagiatan li{
+  display: block;
+}
+.container .bariskatilu .headline{
+  display: block;
+}
+.container .bariskatilu .headline img{
+  width: 250px;
+  float:left;
+}
