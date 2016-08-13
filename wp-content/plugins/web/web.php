@@ -35,23 +35,23 @@ function create_label( $name ) {
 
 function create_menus() {
     
-    register_post_type( 'slide',
-        array(
-            'labels' => create_label('Slide'),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'slide'),
-            'menu_icon' => 'dashicons-format-gallery',
-            'supports' => array( 'title', 'editor', 'thumbnail'),
-        )
-    );
+    // register_post_type( 'slide',
+    //     array(
+    //         'labels' => create_label('Slide'),
+    //         'public' => true,
+    //         'has_archive' => true,
+    //         'rewrite' => array('slug' => 'slide'),
+    //         'menu_icon' => 'dashicons-format-gallery',
+    //         'supports' => array( 'title', 'editor', 'thumbnail'),
+    //     )
+    // );
 
     register_post_type( 'menu',
         array(
             'labels' => create_label('Menu'),
             'public' => true,
             'has_archive' => true,
-            'rewrite' => array('slug' => 'menu'),
+            // 'rewrite' => array('slug' => 'menu'),
             'menu_icon' => 'dashicons-welcome-write-blog',
             'supports' => array( 'title', 'editor'),
         )
@@ -75,7 +75,7 @@ function create_menus() {
             'has_archive' => true,
             'rewrite' => array('slug' => 'kegiatan'),
             'menu_icon' => 'dashicons-groups',
-            'supports' => array( 'title', 'editor', 'thumbnail'),
+            'supports' => array( 'title', 'editor'),
         )
     );
 
@@ -114,14 +114,14 @@ function create_menus() {
 }
 
 function sosial_media_add_menu() {
-  add_menu_page( 'Sosial media', 'Sosial media', 'manage_options', 'custom-settings', 'sosial_media_page', 'dashicons-admin-users', 50);
+  add_menu_page( 'Seting Konten', 'Seting Konten', 'manage_options', 'custom-settings', 'sosial_media_page', 'dashicons-admin-users', 50);
 }
 
 add_action( 'admin_menu', 'sosial_media_add_menu' );
 
 function sosial_media_page() { ?>
     <div class="wrap">
-        <h1>Sosial media</h1>
+        <h1>Seting Konten</h1>
         <form method="post" action="options.php">
             <?php
            settings_fields('section');
@@ -148,17 +148,35 @@ function setting_youtube() { ?>
             <input type="text" name="youtube" id="youtube" value="<?php echo get_option('youtube'); ?>" />
             <?php }
 
+function setting_tagline() { ?>
+            <input type="text" name="tagline" id="tagline" value="<?php echo get_option('tagline'); ?>" style="width:500px" />
+            <?php } 
+
+function setting_video() { ?>
+            <input type="text" name="video" id="video" value="<?php echo get_option('video'); ?>" style="width:500px" />
+            <?php } 
+
+function setting_video_title() { ?>
+            <input type="text" name="video_title" id="video_title" value="<?php echo get_option('video_title'); ?>" style="width:500px" />
+            <?php } 
+
 function sosial_media_page_setup() {
     add_settings_section('section', '', null, 'theme-options');
     add_settings_field('twitter', 'Twitter URL', 'setting_twitter', 'theme-options', 'section');
     add_settings_field('facebook', 'Facebook URL', 'setting_facebook', 'theme-options', 'section');
     add_settings_field('instagram', 'Instagram URL', 'setting_instagram', 'theme-options', 'section');
     add_settings_field('youtube', 'Youtube URL', 'setting_youtube', 'theme-options', 'section');
+    add_settings_field('tagline', 'Tagline', 'setting_tagline', 'theme-options', 'section');
+    add_settings_field('video', 'Video', 'setting_video', 'theme-options', 'section');
+    add_settings_field('video_title', 'Judul Video', 'setting_video_title', 'theme-options', 'section');
   
     register_setting('section', 'twitter');
     register_setting('section', 'facebook');
     register_setting('section', 'instagram');
     register_setting('section', 'youtube');
+    register_setting('section', 'tagline');
+    register_setting('section', 'video');
+    register_setting('section', 'video_title');
 }
 
 add_action( 'admin_init', 'sosial_media_page_setup' );   

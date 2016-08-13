@@ -264,6 +264,12 @@ header .menus .judul span:nth-of-type(2){
 header .menus .mmenu{
   position: relative;
 }
+header .menus .mmenu li a{
+  color: #fff;
+}
+header .menus .mmenu li a:hover{
+  text-decoration: none;
+}
 header .menus .mmenu li{
   display: block;
   float: right;
@@ -276,6 +282,9 @@ header .menus .mmenu li{
 }
 header .menus .mmenu li:hover{
   background: #fff;
+  color:#1a476e;
+}
+header .menus .mmenu li:hover > a{
   color:#1a476e;
 }
 header .menus .mmenu li:hover > .submenu{
@@ -456,8 +465,9 @@ footer .dicon3:before{
   padding-top:40px;
   padding-bottom:40px;
 }
-.container .bariskahiji img{
-  width:300px;
+.container .bariskahiji iframe{
+  width:350px;
+  height: 230px;
 }
 .container .bariskahiji h4{
   font-size:18pt;

@@ -22,7 +22,7 @@
     			</div>
     			<div class="col-md-4 hijau">
     				<center>
-	    				<img src="logo.png" />
+	    				<img src="<?php echo get_site_url(); ?>/logo.png" />
 	    				<span class="miring">"terakreditasi A"</span>
     				</center>
     			</div>

@@ -23,23 +23,25 @@
 				<input type="text" name="search" placeholder="Pencarian" class="form-control"  />
 			</div>
 			<div class="col-md-2 pull-right ikon">
-				<a href=""> <span class="dicon-fb"></span></a>
-				<a href=""> <span class="dicon-tw"></span></a>
-				<a href=""> <span class="dicon-yu"></span></a>
-				<a href=""> <span class="dicon-in"></span></a>
+				<a href="<?php echo get_option('facebook'); ?>"> <span class="dicon-fb"></span></a>
+				<a href="<?php echo get_option('twitter'); ?>"> <span class="dicon-tw"></span></a>
+				<a href="<?php echo get_option('youtube'); ?>"> <span class="dicon-yu"></span></a>
+				<a href="<?php echo get_option('instagram'); ?>"> <span class="dicon-in"></span></a>
 			</div>
 		</div>
 		<div class="row slider-pane">
 			<ul>
 				<li>
 					<img src="<?php echo get_template_directory_uri() ?>/img/1.jpg" />
-					<div class="sliderlabel">Pengkuh Agamana, Luhung Elmuna, Jembar Budayana, Parigel Kabisana</div>
+					<div class="sliderlabel"> <?php echo get_option('tagline'); ?></div>
 				</li>
 			</ul>
 		</div>
 		<div class="row menus">
 			<div class="container">
-				<img src="logo.png" class="col-md-2 logo" />
+				<a href="<?php echo get_site_url(); ?>">
+					<img src="<?php echo get_site_url(); ?>/logo.png" class="col-md-2 logo" />
+				</a>
 				<div class="col-md-2 judul">
 					<span>SMA</span>
 					<span>PASUNDAN 3</span>
@@ -47,36 +49,36 @@
 				</div>
 				<ul class="col-md-8 mmenu">
 					<li>
-						Kontak
+						<a href="<?php echo get_site_url(); ?>/menu/kontak">Kontak</a>
 					</li>
 					<li>
-						Galeri
+						<a href="">Galeri</a>
 					</li>
 					<li>
-						Berita
+						<a href="">Berita</a>
 					</li>
 					<li>
 						Kehidupan Siswa
 						<div class="submenu">
 							<div class="kiri">
-								<a href="">Organisasi Siswa Intra Sekolah</a>
+								<a href="<?php echo get_site_url(); ?>/menu/organisasi-siswa-intra-sekolah">Organisasi Siswa Intra Sekolah</a>
 								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
-								<a href="">Buku Pedoman Siswa &amp; Orang Tua</a>
+								<a href="<?php echo get_site_url(); ?>/menu/buku-pedoman-siswa-orang-tua">Buku Pedoman Siswa &amp; Orang Tua</a>
 								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
 							</div>
 							<div class="tengah">
 								<center>
 									<img src="<?php echo get_template_directory_uri() ?>/img/image4.jpeg" />
-									<a href="">Kehidupan Siswa di Sekolah</a>
+									<a href="<?php echo get_site_url(); ?>/menu/kehidupan-siswa-di-sekolah">Kehidupan Siswa di Sekolah</a>
 								</center>
 							</div>
 							<div class="kanan">
-								<a href="">Kalender Akademik</a>
-								<a href="">Kegiatan Rutin Harian</a>
-								<a href="">Seragam</a>
-								<a href="">Ekstrakurikuler</a>
-								<a href="">Kepemimpinan</a>
-								<a href="">Kesehatan dan Keamanan</a>
+								<a href="<?php echo get_site_url(); ?>/menu/kalender-akademik">Kalender Akademik</a>
+								<a href="<?php echo get_site_url(); ?>/menu/kegiatan-rutin-harian">Kegiatan Rutin Harian</a>
+								<a href="<?php echo get_site_url(); ?>/menu/seragam">Seragam</a>
+								<a href="<?php echo get_site_url(); ?>/menu/ekstrakurikuler">Ekstrakurikuler</a>
+								<a href="<?php echo get_site_url(); ?>/menu/kepemimpinan">Kepemimpinan</a>
+								<a href="<?php echo get_site_url(); ?>/menu/kesehatan-dan-keamanan">Kesehatan dan Keamanan</a>
 							</div>
 						</div>
 					</li>
@@ -84,24 +86,24 @@
 						Akademik
 						<div class="submenu">
 							<div class="kiri">
-								<a href="">Pembelajaran Abad 21</a>
+								<a href="<?php echo get_site_url(); ?>/menu/pembelajaran-abad-21">Pembelajaran Abad 21</a>
 								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
-								<a href="">Sistem Penilaian Terintegrasi</a>
+								<a href="<?php echo get_site_url(); ?>/menu/sistem-penilaian-terintegrasi">Sistem Penilaian Terintegrasi</a>
 								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
 							</div>
 							<div class="tengah">
 								<center>
 									<img src="<?php echo get_template_directory_uri() ?>/img/image3.jpeg" />
-									<a href="">Sistem Akademik</a>
+									<a href="<?php echo get_site_url(); ?>/menu/sistem-akademik">Sistem Akademik</a>
 								</center>
 							</div>
 							<div class="kanan">
-								<a href="">Kurikulum</a>
-								<a href="">Sistem Pembelajaran</a>
-								<a href="">Sistem Penilaian</a>
-								<a href="">Peminatan</a>
-								<a href="">Perpustakaan</a>
-								<a href="">Teknologi Pembelajaran</a>
+								<a href="<?php echo get_site_url(); ?>/menu/kurikulum">Kurikulum</a>
+								<a href="<?php echo get_site_url(); ?>/menu/sistem-pembelajaran">Sistem Pembelajaran</a>
+								<a href="<?php echo get_site_url(); ?>/menu/sistem-penilaian">Sistem Penilaian</a>
+								<a href="<?php echo get_site_url(); ?>/menu/peminatan">Peminatan</a>
+								<a href="<?php echo get_site_url(); ?>/menu/perpustakaan">Perpustakaan</a>
+								<a href="<?php echo get_site_url(); ?>/menu/teknologi-pembelajaran">Teknologi Pembelajaran</a>
 							</div>
 						</div>
 					</li>
@@ -109,24 +111,24 @@
 						Penerimaan
 						<div class="submenu">
 							<div class="kiri">
-								<a href="">Mengapa SMA Pasundan 3 Bandung ?</a>
+								<a href="<?php echo get_site_url(); ?>/menu/mengapa-sma-pasundan-3-bandung">Mengapa SMA Pasundan 3 Bandung ?</a>
 								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
-								<a href="">Buku Pedoman Pendaftaran</a>
+								<a href="<?php echo get_site_url(); ?>/menu/buku-pedoman-pendaftaran">Buku Pedoman Pendaftaran</a>
 								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
 							</div>
 							<div class="tengah">
 								<center>
 									<img src="<?php echo get_template_directory_uri() ?>/img/image2.jpeg" />
-									<a href="">Penerimaan Siswa Baru</a>
+									<a href="<?php echo get_site_url(); ?>/menu/penerimaan-siswa-baru">Penerimaan Siswa Baru</a>
 								</center>
 							</div>
 							<div class="kanan">
-								<a href="">Pendaftaran 2016</a>
-								<a href="">Prosedur Pendaftaran</a>
-								<a href="">Upload Persyaratan</a>
-								<a href="" style="font-style:italic">Campur Tour</a>
-								<a href="">Bantuan Keuangan</a>
-								<a href="">Pertanyaan Sering Ditanyakan</a>
+								<a href="<?php echo get_site_url(); ?>/menu/pendaftaran-2016">Pendaftaran 2016</a>
+								<a href="<?php echo get_site_url(); ?>/menu/prosedur-pendaftaran">Prosedur Pendaftaran</a>
+								<a href="<?php echo get_site_url(); ?>/menu/upload-persyaratan">Upload Persyaratan</a>
+								<a href="<?php echo get_site_url(); ?>/menu/campus-tour" style="font-style:italic">Campus Tour</a>
+								<a href="<?php echo get_site_url(); ?>/menu/bantuan-keuangan">Bantuan Keuangan</a>
+								<a href="<?php echo get_site_url(); ?>/menu/pertanyaan-sering-ditanyakan">Pertanyaan Sering Ditanyakan</a>
 							</div>
 						</div>
 					</li>
@@ -134,25 +136,25 @@
 						Profil
 						<div class="submenu">
 							<div class="kiri">
-								<a href="">Jelajahi Profil Buku Sekolah</a>
+								<a href="<?php echo get_site_url(); ?>/menu/jelajahi-profil-buku-sekolah">Jelajahi Profil Buku Sekolah</a>
 								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
-								<a href="">Potret dari Lulusan</a>
+								<a href="<?php echo get_site_url(); ?>/menu/potret-dari-lulusan">Potret dari Lulusan</a>
 								<p>There many variations of passages of lOrem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
 							</div>
 							<div class="tengah">
 								<center>
 									<img src="<?php echo get_template_directory_uri() ?>/img/image1.jpeg" />
-									<a href="">Profil SMA Pasundan 3 Bandung</a>
+									<a href="<?php echo get_site_url(); ?>/menu/profil-sma-pasundan-3-bandung">Profil SMA Pasundan 3 Bandung</a>
 								</center>
 							</div>
 							<div class="kanan">
-								<a href="">Sambutan</a>
-								<a href="">Sejarah</a>
-								<a href="">Visi, Misi, dan Filosopi</a>
-								<a href="">Guru dan Tenaga Kependidikan</a>
-								<a href="">Rencana Strategis</a>
-								<a href="">Fasilitas</a>
-								<a href="">Petunjuk Ke Sekolah</a>
+								<a href="<?php echo get_site_url(); ?>/menu/sambutan">Sambutan</a>
+								<a href="<?php echo get_site_url(); ?>/menu/sejarah">Sejarah</a>
+								<a href="<?php echo get_site_url(); ?>/menu/visi-misi-dan-filosopi">Visi, Misi, dan Filosopi</a>
+								<a href="<?php echo get_site_url(); ?>/menu/guru-dan-tenaga-kependidikan">Guru dan Tenaga Kependidikan</a>
+								<a href="<?php echo get_site_url(); ?>/menu/rencana-strategis">Rencana Strategis</a>
+								<a href="<?php echo get_site_url(); ?>/menu/fasilitas">Fasilitas</a>
+								<a href="<?php echo get_site_url(); ?>/menu/petunjuk-ke-sekolah">Petunjuk Ke Sekolah</a>
 							</div>
 						</div>
 					</li>
