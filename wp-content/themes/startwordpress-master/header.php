@@ -40,14 +40,14 @@
 		<div class="row menus">
 			<div class="container">
 				<a href="<?php echo get_site_url(); ?>">
-					<img src="<?php echo get_site_url(); ?>/logo.png" class="col-md-2 logo" />
+					<img src="<?php echo get_site_url(); ?>/logo.png" class="col-md-2 col-xs-4 logo" />
 				</a>
-				<div class="col-md-2 judul">
+				<div class="col-md-2 col-xs-5 judul">
 					<span>SMA</span>
 					<span>PASUNDAN 3</span>
 					<span>BANDUNG</span>
 				</div>
-				<ul class="col-md-8 mmenu">
+				<ul class="col-md-8 mmenu navbar-collapse collapse">
 					<li>
 						<a href="<?php echo get_site_url(); ?>/menu/kontak">Kontak</a>
 					</li>

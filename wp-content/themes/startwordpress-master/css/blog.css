@@ -165,11 +165,11 @@ h6, .h6 {
   margin-bottom: 0;
 }
 .blog-nav li {
-		position: relative;
+    position: relative;
     display: inline-block;
     padding: 10px;
     font-weight: 500;
-	
+  
 }
 .blog-nav li a {
     color: #fff;
@@ -263,6 +263,7 @@ header .menus .judul span:nth-of-type(2){
 }
 header .menus .mmenu{
   position: relative;
+  float:right;
 }
 header .menus .mmenu li a{
   color: #fff;
@@ -378,6 +379,7 @@ footer .satu ul{
   list-style: none;
   padding: 10px; margin: 20px 0 0 0;
   font-size:12pt;
+  min-height: 170px;
 }
 footer .satu ul li{
   float:left;
