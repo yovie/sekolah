@@ -5,16 +5,16 @@
     		<div class="container">
     			<div class="col-md-2">
     				<ul>
-    					<li> <a href=""> Profil </a> </li>
-    					<li> <a href=""> Penerimaan </a> </li>
-    					<li> <a href=""> Akademik </a> </li>
-    					<li> <a href=""> Alumni </a> </li>
+    					<li> <a href="<?php echo get_site_url(); ?>/menu/jelajahi-profil-buku-sekolah"> Profil </a> </li>
+    					<li> <a href="<?php echo get_site_url(); ?>/menu/pendaftaran"> Penerimaan </a> </li>
+    					<li> <a href="<?php echo get_site_url(); ?>/menu/kurikulum"> Akademik </a> </li>
+    					<li> <a href="<?php echo get_site_url(); ?>/menu/potret-dari-lulusan"> Alumni </a> </li>
     					<li> <a href=""> Sedekah </a> </li>
     				</ul>
     			</div>
     			<div class="col-md-2">
     				<ul>
-    					<li> <a href=""> Kehidupan Siswa </a> </li>
+    					<li> <a href="<?php echo get_site_url(); ?>/menu/kalender-akademik"> Kehidupan Siswa </a> </li>
     					<li> <a href=""> Berita </a> </li>
     					<li> <a href=""> Karir </a> </li>
     					<li> <a href=""> Forum Orang Tua </a> </li>

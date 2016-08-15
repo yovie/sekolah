@@ -191,7 +191,7 @@ header .search-pane .ikon{
   font-size:15pt;
 }
 header .search-pane .ikon a{
-  float:left;
+  float:right;
   color: #fff;
   padding: 0 7px 0 7px;
   cursor: pointer;
@@ -299,7 +299,7 @@ header .menus .mmenu li .submenu{
   overflow: hidden;
   margin: 0;
   padding: 10px;
-  left:53px;
+  left:15px;
   right: 0;
   line-height: 10px;
   font-size: 9pt;

@@ -19,14 +19,16 @@
 
 	<header>
 		<div class="row search-pane">
-			<div class="col-md-2 pull-right">
-				<input type="text" name="search" placeholder="Pencarian" class="form-control"  />
-			</div>
-			<div class="col-md-2 pull-right ikon">
-				<a href="<?php echo get_option('facebook'); ?>"> <span class="dicon-fb"></span></a>
-				<a href="<?php echo get_option('twitter'); ?>"> <span class="dicon-tw"></span></a>
-				<a href="<?php echo get_option('youtube'); ?>"> <span class="dicon-yu"></span></a>
-				<a href="<?php echo get_option('instagram'); ?>"> <span class="dicon-in"></span></a>
+			<div class="container">
+				<div class="col-md-2 pull-right">
+					<input type="text" name="search" placeholder="Pencarian" class="form-control"  />
+				</div>
+				<div class="col-md-3 pull-right ikon">
+					<a href="<?php echo get_option('instagram'); ?>"> <span class="dicon-in"></span></a>
+					<a href="<?php echo get_option('youtube'); ?>"> <span class="dicon-yu"></span></a>
+					<a href="<?php echo get_option('twitter'); ?>"> <span class="dicon-tw"></span></a>
+					<a href="<?php echo get_option('facebook'); ?>"> <span class="dicon-fb"></span></a>
+				</div>
 			</div>
 		</div>
 		<div class="row slider-pane">
@@ -123,7 +125,7 @@
 								</center>
 							</div>
 							<div class="kanan">
-								<a href="<?php echo get_site_url(); ?>/menu/pendaftaran-2016">Pendaftaran 2016</a>
+								<a href="<?php echo get_site_url(); ?>/menu/pendaftaran">Pendaftaran</a>
 								<a href="<?php echo get_site_url(); ?>/menu/prosedur-pendaftaran">Prosedur Pendaftaran</a>
 								<a href="<?php echo get_site_url(); ?>/menu/upload-persyaratan">Upload Persyaratan</a>
 								<a href="<?php echo get_site_url(); ?>/menu/campus-tour" style="font-style:italic">Campus Tour</a>
