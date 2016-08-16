@@ -244,3 +244,8 @@ function remove_core_updates2(){
 add_filter('pre_site_transient_update_core','remove_core_updates2');
 add_filter('pre_site_transient_update_plugins','remove_core_updates2');
 add_filter('pre_site_transient_update_themes','remove_core_updates2');
+
+// function my_custom_admin_url($path) { 
+//     return str_replace('wp-admin', 'dashboard', $path); 
+// }
+// add_filter('admin_url', 'my_custom_admin_url');
