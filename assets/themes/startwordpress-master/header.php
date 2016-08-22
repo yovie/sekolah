@@ -31,6 +31,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="row slider-pane">
 			<ul>
 				<li>
@@ -39,7 +40,8 @@
 				</li>
 			</ul>
 		</div>
-		<div class="row menus">
+
+		<div class="row menus hidden-xs hidden-sm">
 			<div class="container">
 				<a href="<?php echo get_site_url(); ?>">
 					<img src="<?php echo get_site_url(); ?>/logo.png" class="col-md-2 col-xs-4 logo" />
@@ -49,7 +51,7 @@
 					<span>PASUNDAN 3</span>
 					<span>BANDUNG</span>
 				</div>
-				<ul class="col-md-8 mmenu navbar-collapse collapse">
+				<ul class="col-md-8 mmenu">
 					<li>
 						<a href="<?php echo get_site_url(); ?>/menu/kontak">Kontak</a>
 					</li>
@@ -163,6 +165,78 @@
 				</ul>
 			</div>
 		</div>
+		
+		<nav class="navbar navbar-default hidden-md hidden-lg">
+	        <div class="container">
+	          <div class="navbar-header">
+	            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	              <span class="sr-only">Toggle navigation</span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	            </button>
+	            <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
+	            	<img src="<?php echo get_site_url(); ?>/logo.png" class="col-md-2 col-xs-4 logo" />
+	            	<span class="a">SMA</span>
+	            	<span class="b">PASUNDAN 3</span>
+	            	<span class="c">BANDUNG</span>
+	            </a>
+	          </div>
+	          <div id="navbar" class="navbar-collapse collapse">
+	            	<ul class="nav navbar-nav navbar-right">
+	              		<li class="dropdown">
+	                		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil </a>
+	                		<ul class="dropdown-menu">
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/sambutan">Sambutan</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/sejarah">Sejarah</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/visi-misi-dan-filosopi">Visi, Misi dan Filosopi</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/guru-dan-tenaga-kependidikan">Guru dan Tenaga Kependidikan</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/rencana-strategis">Rencana Strategis</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/fasilitas">Fasilitas</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/petunjuk-ke-sekolah">Petunjuk ke Sekolah</a></li>
+	                		</ul>
+	              		</li>
+	              		<li class="dropdown">
+	                		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Penerimaan </a>
+	                		<ul class="dropdown-menu">
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/pendaftaran">Pendaftaran</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/prosedur-pendaftaran">Prosedur Pendaftaran</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/upload-persyaratan">Upload Persyaratan</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/campus-tour"><i>Campus Tour</i></a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/bantuan-keuangan">Bantuan Keuangan</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/pertanyaan-sering-ditanyakan">Pertanyaan Sering Ditanyakan</a></li>
+	                		</ul>
+	              		</li>
+	              		<li class="dropdown">
+	                		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Akademik</a>
+	                		<ul class="dropdown-menu">
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/kurikulum">Akademik</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/sistem-pembelajaran">Sistem Pembelajaran</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/sistem-penilaian">Sistem Penilaian</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/peminatan">Peminatan</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/perpustakaan">Perpustakaan</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/teknologi-pembelajaran">Teknologi Pembelajaran</a></li>
+	                		</ul>
+	              		</li>
+	              		<li class="dropdown">
+	                		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kehidupan Siswa </a>
+	                		<ul class="dropdown-menu">
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/kalender-akademik">Kalender Akademik</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/kegiatan-rutin-harian">Kegiatan Rutin Harian</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/seragam">Seragam</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/ekstrakurikuler">Ekstrakurikuler</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/kepemimpinan">Kepemimpinan</a></li>
+			                  <li><a href="<?php echo get_site_url(); ?>/menu/kesehatan-dan-keamanan">Kesehatan dan Keamanan</a></li>
+	                		</ul>
+	              		</li>
+	              		<li><a href="">Berita</a></li>
+	              		<li><a href="">Galeri</a></li>
+	              		<li><a href="<?php echo get_site_url(); ?>/menu/kontak">Kontak</a></li>
+	            	</ul>
+	          </div>
+	        </div>
+	      </nav>
+
 	</header>
 
 	<div class="container">

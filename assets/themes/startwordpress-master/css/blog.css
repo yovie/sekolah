@@ -176,7 +176,6 @@ h6, .h6 {
 }
 
 header{
-  background: #ff6600;
   border:none;
   margin:0;
   padding: 0;
@@ -186,6 +185,7 @@ header .search-pane{
   padding:5px 0 5px 0;
   margin:0;
   height: 45px;
+  background: #ff6600;
 }
 header .search-pane .ikon{
   font-size:15pt;
@@ -205,8 +205,8 @@ header .search-pane input[type=submit]{
 }
 header .slider-pane{
   background: #0cab4e;
+  padding:0;
   margin:0;
-  padding: 0;
 }
 header .slider-pane ul{
   list-style: none;
@@ -234,6 +234,101 @@ header .slider-pane ul li .sliderlabel{
   color:#fff;
   padding: 10px 0 10px 0;
 }
+
+header .navbar{
+  margin-bottom: 0;
+  min-height: 90px;
+  background: #1a476e;
+  z-index: 1000;
+  opacity: 0.9;
+  border:none;
+  color:white;
+
+  position: absolute;
+  left: 0;
+  top:45px;
+  right: 0;
+}
+header .navbar .navbar-header{
+  min-height: 90px;
+}
+header .navbar .navbar-header .navbar-brand{
+  min-height: 90px;
+  line-height: 50px;
+  width: 360px;
+}
+header .navbar .navbar-header .navbar-brand .logo{
+  height: 125px;
+  width: auto;
+  margin-top: -50px;
+}
+header .navbar .navbar-header .navbar-brand span{
+  padding: 0;
+  margin:0;
+  font-size: 12pt;
+  line-height: 15px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+header .navbar .navbar-header .navbar-brand .a{
+  display: block;
+}
+header .navbar .navbar-header .navbar-brand .b{
+  display: block;
+  font-size: 20pt;
+  line-height: 30px;
+}
+header .navbar .navbar-header .navbar-brand .c{
+  display: block;
+}
+header .navbar #navbar{
+  min-height: 90px;
+}
+header .navbar #navbar ul{
+  min-height: 90px;
+}
+header .navbar #navbar ul li{
+  min-height: 90px;
+}
+header .navbar #navbar ul li.active a{
+  color:#1a476e;
+}
+header .navbar #navbar ul li.open a{
+  color:#1a476e;
+}
+header .navbar #navbar ul li  a{
+  min-height: 90px;
+  line-height: 50px;
+  color:white;
+}
+header .navbar #navbar ul li  a:hover{
+  color:#1a476e;
+  background: white;
+}
+header .navbar #navbar ul li .dropdown-menu{
+  min-height: 15px;
+  left:0;
+  right: auto;
+}
+header .navbar #navbar ul li .dropdown-menu li{
+  min-height: 15px;
+}
+header .navbar #navbar ul li .dropdown-menu li a{
+  min-height: 15px;
+  line-height: 15px !important;
+  color:white;
+}
+header .navbar #navbar ul li .dropdown-menu li a:hover{
+  color:#1a476e;
+}
+header .navbar #navbar ul li .dropdown-menu li.divider{
+    min-height: 1px !important;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
 header .menus{
   position: absolute;
   padding: 0;
