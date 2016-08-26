@@ -75,7 +75,7 @@ function create_menus() {
             'has_archive' => true,
             'rewrite' => array('slug' => 'kegiatan'),
             'menu_icon' => 'dashicons-groups',
-            'supports' => array( 'title', 'editor'),
+            'supports' => array( 'title', 'editor', 'thumbnail'),
         )
     );
 

@@ -15,7 +15,7 @@
     			<div class="col-md-2">
     				<ul>
     					<li> <a href="<?php echo get_site_url(); ?>/menu/kalender-akademik"> Kehidupan Siswa </a> </li>
-    					<li> <a href=""> Berita </a> </li>
+    					<li> <a href="<?php echo get_site_url(); ?>/berita"> Berita </a> </li>
     					<li> <a href=""> Karir </a> </li>
     					<li> <a href=""> Forum Orang Tua </a> </li>
     				</ul>

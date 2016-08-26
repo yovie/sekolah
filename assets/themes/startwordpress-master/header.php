@@ -56,10 +56,10 @@
 						<a href="<?php echo get_site_url(); ?>/menu/kontak">Kontak</a>
 					</li>
 					<li>
-						<a href="">Galeri</a>
+						<a href="<?php echo get_site_url(); ?>/galeri">Galeri</a>
 					</li>
 					<li>
-						<a href="">Berita</a>
+						<a href="<?php echo get_site_url(); ?>/berita">Berita</a>
 					</li>
 					<li>
 						Kehidupan Siswa
@@ -229,8 +229,8 @@
 			                  <li><a href="<?php echo get_site_url(); ?>/menu/kesehatan-dan-keamanan">Kesehatan dan Keamanan</a></li>
 	                		</ul>
 	              		</li>
-	              		<li><a href="">Berita</a></li>
-	              		<li><a href="">Galeri</a></li>
+	              		<li><a href="<?php echo get_site_url(); ?>/berita">Berita</a></li>
+	              		<li><a href="<?php echo get_site_url(); ?>/galeri">Galeri</a></li>
 	              		<li><a href="<?php echo get_site_url(); ?>/menu/kontak">Kontak</a></li>
 	            	</ul>
 	          </div>

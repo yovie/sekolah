@@ -730,3 +730,86 @@ footer .dicon3:before{
   width: 120px;
   height: 120px;
 }
+
+.row .sidemenu{
+  list-style: none;
+  width: 100%;
+}
+.row .sidemenu li{
+  width: 100%;
+  text-align: center;
+  border-bottom: solid 1px #eee;
+}
+.row .sidemenu li label{
+  display: block;
+  padding: 10px 0 10px 0;
+  background: #02703e; 
+  color:#fff;
+  font-size: 12pt;
+  margin:0;
+  border-radius: 5px 5px 0 0;
+}
+.row .sidemenu li a{
+  display: block;
+  padding: 7px 0 7px 0;
+  background: #1a476e;
+  color:#fff;
+}
+.row .sidemenu li a:hover{
+  background: #02903e; 
+  text-decoration: none;
+}
+.row .sidemenu li a.active{
+  background: #02903e; 
+}
+.konten-list{
+  padding: 20px 0 20px 0;
+}
+.konten-list h2, .blog-post h2{
+  border-bottom:solid 1px #777;
+  margin-bottom: 20px;
+  color: #777;
+  font-size:20pt;
+}
+.konten-list .items{
+  border: solid 1px #ccc;
+  height: 200px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  cursor:pointer;
+}
+.konten-list .items .judul{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left:0;
+  background: black;
+  color:#fff;
+  padding:5px;
+  text-align:center;
+}
+.konten-list .items .tgl{
+  position: absolute;
+  right: 0;
+  background: #1a476e;
+  color:white;
+  padding:5px;
+}
+.konten-list .items img{
+  position: absolute;
+  left:0;
+  width:100%;
+}
+
+.alignleft{
+  float:left;
+}
+
+.blog-post{
+  padding: 20px 0 10px 0;
+}
+.blog-post .attachment-post-thumbnail{
+  width:100%;
+  height: auto;
+}

@@ -76,7 +76,7 @@
 				</li>
 				<?php } ?>
 			</ul>
-			<span class="nextright"> <a href=""> Selengkapnya &nbsp; &gt;&gt; </a></span>
+			<span class="nextright"> <a href="<?php echo get_site_url(); ?>/kegiatan"> Selengkapnya &nbsp; &gt;&gt; </a></span>
 		</div>
 		<div class="col-md-6 backbiru">
 			<div class="col-md-12">
@@ -105,7 +105,7 @@
 					<li> <span class="dicon4"></span> <a href="<?php echo get_post_permalink($ri->ID) ?>"><?php echo $ri->post_title ?></a> </li>
 					<?php } ?>
 				</ul>
-				<span class="nextright"> <a href=""> Selengkapnya &nbsp; &gt;&gt; </a></span>
+				<span class="nextright"> <a href="<?php echo get_site_url(); ?>/berita"> Selengkapnya &nbsp; &gt;&gt; </a></span>
 
 				<?php } ?>
 			</div>
@@ -131,7 +131,7 @@
 					</li>
 					<?php } ?>
 				</ul>
-				<span class="nextright"> <a href=""> Selengkapnya &nbsp; &gt;&gt; </a></span>
+				<span class="nextright"> <a href="<?php echo get_site_url(); ?>/galeri"> Selengkapnya &nbsp; &gt;&gt; </a></span>
 				<?php } ?>
 			</div>
 		</div>
@@ -159,20 +159,46 @@
 
 <?php else: ?>
 
-	<pre>
-		<?php print_r($current_category); ?>
-	</pre>
-
-	<?php 
-		$galeri = wp_get_recent_posts( array(
-			'numberposts' => 3,
-			'offset' => 0,
-			'post_type' => 'galeri'
-		), OBJECT);
-		if(count($galeri) > 0) {
+	<?php
+		$bulan = array('Januari', 'Februari', 'Maret', 'April',
+			'Mei', 'Juni', 'Juli', 'Agustus', 'September',
+			'Oktober', 'November', 'Desember');
 	?>
 
-	<?php } ?>
+	<div class="row konten-list">
+		<h2><?php echo $current_category->label ?></h2>
+		<?php 
+			$kontens = wp_get_recent_posts( array(
+				'numberposts' => -1,
+				'offset' => 0,
+				'post_type' => $current_category->name
+			), OBJECT);
+			if(count($kontens) > 0) {
+
+				foreach($kontens as $ko=>$ten):
+		?>
+			<div class="col-md-4">
+				<a href="<?php echo get_post_permalink($ten->ID) ?>">
+					<div class="items">
+						<img src="<?php 
+									$kon_image = wp_get_attachment_url( get_post_thumbnail_id($ten->ID) );
+									if(!empty($kon_image))
+										echo $kon_image;
+									else
+										echo get_site_url() . "/logo.png";
+								 ?>" />
+						<span class="judul"><?php echo $ten->post_title; ?></span>
+						<span class="tgl"><?php 
+							$dp = date_parse($ten->post_date);
+							echo $dp['day']; 
+							echo " " . $bulan[ intval($dp['month'])-1 ];
+							echo " " . $dp['year'];
+						?></span>
+					</div>
+				</a>
+			</div>
+		<?php endforeach; } ?>
+	</div>
 
 <?php endif; ?>
 
