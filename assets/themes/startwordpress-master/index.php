@@ -106,29 +106,28 @@
 			</div>
 			<div class="col-md-12">
 				<h4>Galeri</h4>
+				<?php 
+					$galeri = wp_get_recent_posts( array(
+							'numberposts' => 3,
+		    				'offset' => 0,
+		    				'post_type' => 'galeri'
+						), OBJECT);
+					if(count($galeri) > 0) {
+				?>
 				<ul class="potopoto">
+					<?php foreach($galeri as $ga=>$le){ ?>
 					<li>
-						<a href="">
-							<img src="<?php echo get_template_directory_uri() ?>/img/image1.jpeg" />
+						<a title="<?php echo $le->post_title ?>" href="<?php echo get_post_permalink($le->ID) ?>">
+							<img src="<?php 
+								$galeri_image = wp_get_attachment_url( get_post_thumbnail_id($le->ID) );
+								echo $galeri_image;
+							 ?>" />
 						</a>
 					</li>
-					<li>
-						<a href="">
-							<img src="<?php echo get_template_directory_uri() ?>/img/image2.jpeg" />
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="<?php echo get_template_directory_uri() ?>/img/image3.jpeg" />
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="<?php echo get_template_directory_uri() ?>/img/image4.jpeg" />
-						</a>
-					</li>
+					<?php } ?>
 				</ul>
 				<span class="nextright"> <a href=""> Selengkapnya &nbsp; &gt;&gt; </a></span>
+				<?php } ?>
 			</div>
 		</div>
 	</div>
