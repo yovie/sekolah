@@ -1,4 +1,8 @@
 <?php get_header(); ?>
+<?php
+	$current_category = get_queried_object();
+	if( empty ($current_category) ):
+?>
 	<div class="row bariskahiji">		
 		<div class="col-md-7">
 			<?php 
@@ -10,6 +14,7 @@
 				$ext = get_extended( $about->post_content );
 				echo $ext['main'];
 			?></p>
+
 			<span class="nextright"> <a href="<?php echo get_post_permalink($about->ID) ?>">Selengkapnya &nbsp; &gt;&gt; </a></span>
 		</div>
 		<div class="col-md-5 text-center">
@@ -151,4 +156,24 @@
 			slideshow();
 		})(jQuery);
 	</script>
+
+<?php else: ?>
+
+	<pre>
+		<?php print_r($current_category); ?>
+	</pre>
+
+	<?php 
+		$galeri = wp_get_recent_posts( array(
+			'numberposts' => 3,
+			'offset' => 0,
+			'post_type' => 'galeri'
+		), OBJECT);
+		if(count($galeri) > 0) {
+	?>
+
+	<?php } ?>
+
+<?php endif; ?>
+
 <?php get_footer(); ?>
