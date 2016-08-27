@@ -474,6 +474,9 @@ footer .hijau{
   height: 100%;
 }
 
+footer .satu{
+  background: #1a476e;
+}
 footer .satu ul{
   list-style: none;
   padding: 10px; margin: 20px 0 0 0;
@@ -506,6 +509,9 @@ footer .satu .col-md-2{
   padding: 0;
 }
 
+footer .dua .container .col-md-4{
+  padding: 20px 0 10px 10px;
+}
 footer .dua span{
   display: block;
   font-weight: bold;

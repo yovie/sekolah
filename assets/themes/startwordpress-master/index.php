@@ -117,7 +117,7 @@
 		    				'offset' => 0,
 		    				'post_type' => 'galeri'
 						), OBJECT);
-					if(count($galeri) > 0) {
+					if(is_array($galeri) && count($galeri) > 0) {
 				?>
 				<ul class="potopoto">
 					<?php foreach($galeri as $ga=>$le){ ?>
