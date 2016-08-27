@@ -46,6 +46,17 @@ function create_menus() {
     //     )
     // );
 
+    register_post_type( 'slide',
+        array(
+            'labels' => create_label('Slide'),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'slide'),
+            'menu_icon' => 'dashicons-images-alt2',
+            'supports' => array( 'title', 'thumbnail'),
+        )
+    );
+
     register_post_type( 'menu',
         array(
             'labels' => create_label('Menu'),

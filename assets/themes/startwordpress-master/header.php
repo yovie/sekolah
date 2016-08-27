@@ -33,11 +33,31 @@
 		</div>
 
 		<div class="row slider-pane">
-			<ul>
+			<?php 
+				$sliders = wp_get_recent_posts( array(
+						'numberposts' => 10,
+	    				'offset' => 0,
+	    				'post_type' => 'slide'
+					), OBJECT);
+			?>
+			<ul class="head-slider" style="position:relative;">
+				<?php if(empty($sliders)): ?>
 				<li>
 					<img src="<?php echo get_template_directory_uri() ?>/img/1.jpg" />
 					<div class="sliderlabel"> <?php echo get_option('tagline'); ?></div>
 				</li>
+				<?php endif; ?>
+				<?php foreach($sliders as $sl=>$de): ?>
+					<li>
+						<img src="<?php 
+							$f_image = wp_get_attachment_url( get_post_thumbnail_id($de->ID) );
+							echo $f_image;
+						 ?>" />
+						<div class="sliderlabel"> <?php echo $de->post_title; ?></div>
+					</li>
+				<?php endforeach; ?>
+				<a class="slidesjs-previous slidesjs-navigation" href="#" title="Previous"> <span class="dicon-back"></span> </a>
+				<a class="slidesjs-next slidesjs-navigation" href="#" title="Next"> <span class="dicon-next"></span> </a>
 			</ul>
 		</div>
 

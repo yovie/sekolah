@@ -212,6 +212,8 @@ header .slider-pane ul{
   list-style: none;
   margin:0;
   padding: 0;
+  overflow: hidden;
+  height: 400px;
 }
 header .slider-pane ul li {
   display: block;
@@ -248,6 +250,7 @@ header .navbar{
   left: 0;
   top:45px;
   right: 0;
+  z-index: 10000;
 }
 header .navbar .navbar-header{
   min-height: 90px;
@@ -339,6 +342,7 @@ header .menus{
   top:45px;
   left:0;
   right:0;
+  z-index: 10000;
 }
 header .menus .logo{
   height: 130px;
@@ -565,6 +569,16 @@ footer .dicon3:before{
 .dicon-in:before{
   font-family: "dashicons";
   content: "\f306";
+}
+
+.dicon-back:before{
+  font-family: "dashicons";
+  content: "\f341";
+}
+
+.dicon-next:before{
+  font-family: "dashicons";
+  content: "\f345";
 }
 
 .container .bariskahiji{
@@ -812,4 +826,32 @@ footer .dicon3:before{
 .blog-post .attachment-post-thumbnail{
   width:100%;
   height: auto;
+}
+
+
+.slidesjs-previous {
+  position: absolute;
+  left:10px;
+  top:200px;
+  z-index: 10000;
+}
+
+.slidesjs-next {
+  position: absolute;
+  right: 10px;
+  top:200px;
+  z-index: 10000;
+}
+
+.slidesjs-previous, .slidesjs-next {
+  border:solid 1px white;
+  padding:10px;
+  background: white;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+.slidesjs-previous:hover, .slidesjs-next:hover {
+  text-decoration: none;
+  opacity: 1;
+  cursor: pointer;
 }

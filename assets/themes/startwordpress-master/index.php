@@ -137,6 +137,8 @@
 		</div>
 	</div>
 
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.slides.min.js"></script>
+
 	<script type="text/javascript">
 		(function($) {
 			var co = $('.slideshow').find('li').length;
@@ -154,6 +156,39 @@
 			}
 
 			slideshow();
+
+			// var hs = $('.head-slider').find('li').length;
+			// var ht = 0;
+
+			// var headslide = function(){
+			// 	if(ht<hs-1)
+			// 		ht++;
+			// 	else
+			// 		ht = 0;
+			// 	$('.head-slider').find('li').slideUp('slow', function(){
+			// 		$('.head-slider').find('li').eq(st).slideDown('slow');
+			// 	});
+			// 	setTimeout(headslide, 7000);
+			// }
+
+			// headslide();
+			$('.head-slider').slidesjs({
+		        play: {
+		        	auto: true,
+		        	interval: 7000,
+		        	effect: 'slide'
+		        },
+		        effect: {
+		        	slide: {
+		        		speed: 3000
+		        	}
+		        },
+		        height:400,
+		        navigation: {
+		        	active: false
+		        }
+		    });
+
 		})(jQuery);
 	</script>
 
