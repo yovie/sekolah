@@ -73,6 +73,64 @@
     	<div class="tiga"></div>
     </footer>
 
+
+    <script type="text/javascript">
+        (function($) {
+            var co = $('.slideshow').find('li').length;
+            var st = 0;
+
+            var slideshow = function(){
+                if(st<co-1)
+                    st++;
+                else
+                    st = 0;
+                $('.slideshow').find('li').slideUp('slow', function(){
+                    $('.slideshow').find('li').eq(st).slideDown('slow');
+                });
+                setTimeout(slideshow, 3000);
+            }
+
+            slideshow();
+
+            // var hs = $('.head-slider').find('li').length;
+            // var ht = 0;
+
+            // var headslide = function(){
+            //  if(ht<hs-1)
+            //      ht++;
+            //  else
+            //      ht = 0;
+            //  $('.head-slider').find('li').slideUp('slow', function(){
+            //      $('.head-slider').find('li').eq(st).slideDown('slow');
+            //  });
+            //  setTimeout(headslide, 7000);
+            // }
+
+            // headslide();
+            $('.head-slider').slidesjs({
+                play: {
+                    auto: true,
+                    interval: 7000,
+                    effect: 'slide'
+                },
+                effect: {
+                    slide: {
+                        speed: 3000
+                    }
+                },
+                // height:1200,
+                // width:900,
+                navigation: {
+                    active: false
+                },
+                pagination: {
+                    active: false
+                }
+            });
+
+        })(jQuery);
+    </script>
+
 <?php wp_footer(); ?> 
   </body>
 </html>

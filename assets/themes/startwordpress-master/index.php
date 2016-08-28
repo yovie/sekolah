@@ -17,8 +17,8 @@
 
 			<span class="nextright"> <a href="<?php echo get_post_permalink($about->ID) ?>">Selengkapnya &nbsp; &gt;&gt; </a></span>
 		</div>
-		<div class="col-md-5 text-center">
-			<iframe
+		<div class="col-md-5 text-center" style="padding:0;margin:0;" >
+			<iframe class="col-md-12" style="padding:0;margin:0;"
 			src="<?php echo get_option('video'); ?>">
 			</iframe>
 			<span><?php echo get_option('video_title'); ?></span>
@@ -78,7 +78,7 @@
 			</ul>
 			<span class="nextright"> <a href="<?php echo get_site_url(); ?>/kegiatan"> Selengkapnya &nbsp; &gt;&gt; </a></span>
 		</div>
-		<div class="col-md-6 backbiru">
+		<div class="col-md-6 backbiru" style="position:relative">
 			<div class="col-md-12">
 				<h4>Berita Terkini</h4>
 				<?php 
@@ -138,59 +138,6 @@
 	</div>
 
 	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.slides.min.js"></script>
-
-	<script type="text/javascript">
-		(function($) {
-			var co = $('.slideshow').find('li').length;
-			var st = 0;
-
-			var slideshow = function(){
-				if(st<co-1)
-					st++;
-				else
-					st = 0;
-				$('.slideshow').find('li').slideUp('slow', function(){
-					$('.slideshow').find('li').eq(st).slideDown('slow');
-				});
-				setTimeout(slideshow, 3000);
-			}
-
-			slideshow();
-
-			// var hs = $('.head-slider').find('li').length;
-			// var ht = 0;
-
-			// var headslide = function(){
-			// 	if(ht<hs-1)
-			// 		ht++;
-			// 	else
-			// 		ht = 0;
-			// 	$('.head-slider').find('li').slideUp('slow', function(){
-			// 		$('.head-slider').find('li').eq(st).slideDown('slow');
-			// 	});
-			// 	setTimeout(headslide, 7000);
-			// }
-
-			// headslide();
-			$('.head-slider').slidesjs({
-		        play: {
-		        	auto: true,
-		        	interval: 7000,
-		        	effect: 'slide'
-		        },
-		        effect: {
-		        	slide: {
-		        		speed: 3000
-		        	}
-		        },
-		        height:400,
-		        navigation: {
-		        	active: false
-		        }
-		    });
-
-		})(jQuery);
-	</script>
 
 <?php else: ?>
 
