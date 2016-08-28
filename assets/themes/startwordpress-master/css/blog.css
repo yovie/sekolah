@@ -399,8 +399,8 @@ header .menus{
   z-index: 10000;
 }
 header .menus .logo{
-  height: 130px;
-  margin-top: -40px;
+  width: 130px;
+  margin-top: -10px;
 }
 header .menus .judul{
   text-align: center;
