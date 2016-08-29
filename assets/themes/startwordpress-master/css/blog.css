@@ -412,7 +412,7 @@ header .menus .judul span{
   font-weight: bold;
 }
 header .menus .judul span:nth-of-type(2){
-  font-size: 18pt;
+  font-size: 15pt;
 }
 header .menus .mmenu{
   position: relative;

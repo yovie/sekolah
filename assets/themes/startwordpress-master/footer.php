@@ -73,6 +73,8 @@
     	<div class="tiga"></div>
     </footer>
 
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.slides.min.js"></script>
+
 
     <script type="text/javascript">
         (function($) {
@@ -118,7 +120,7 @@
                         speed: 3000
                     }
                 },
-                // height:1200,
+                height:1200,
                 // width:900,
                 navigation: {
                     active: false
