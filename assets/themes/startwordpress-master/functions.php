@@ -64,3 +64,14 @@ add_action( 'wp_enqueue_scripts', 'jk_load_dashicons' );
 function jk_load_dashicons() {
     wp_enqueue_style( 'dashicons' );
 }
+
+add_action( 'pre_get_posts', function( $query ) {
+
+    // Check that it is the query we want to change: front-end search query
+    if( $query->is_main_query() && ! is_admin() && $query->is_search() ) {
+
+        // Change the query parameters
+        $query->set( 'posts_per_page', 5 );
+
+    }
+} );

@@ -21,7 +21,7 @@
 		<div class="row search-pane">
 			<div class="container">
 				<div class="col-md-2 pull-right">
-					<input type="text" name="search" placeholder="Pencarian" class="form-control"  />
+					<?php get_search_form() ?>
 				</div>
 				<div class="col-md-3 pull-right ikon hidden-xs hidden-sm">
 					<a href="<?php echo get_option('instagram'); ?>"> <span class="dicon-in"></span></a>
