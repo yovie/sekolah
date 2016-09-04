@@ -259,4 +259,4 @@
 
 	</header>
 	
-	<div class="container">
+	<div class="container base-content">
