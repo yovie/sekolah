@@ -112,12 +112,14 @@
 
             he = wi>hi ? hi:wi;
 
-            console.log(wi, hi, he);
+            // console.log(wi, hi, he);
 
-            $('header').css('height', he + 'px');
-            he -= 90;
-            $('header').find('.sliderlabel').css('top', he + 'px');
-
+            // $('header').css('height', he + 'px');
+            he -= 45;
+            $('header').find('.slider-pane').css('height', he + 'px');
+            he -= 45;
+            $('header').find('.slider-pane').find('.sliderlabel').css('top', he + 'px');
+            // console.log(hi, wi);
             if(hi>wi){
                 // $('header').find('.sliderlabel').css('font-size', '10pt');
                 // $('header').find('.sliderlabel').css('padding-top', '5px');
@@ -136,8 +138,8 @@
                         speed: 3000
                     }
                 },
-                height:1200,
-                // width:900,
+                height:1265, 
+                width:687,
                 navigation: {
                     active: false
                 },
